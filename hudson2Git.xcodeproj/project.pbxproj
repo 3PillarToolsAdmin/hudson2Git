@@ -286,10 +286,12 @@
 		DBE55141156AA4BB00FB297F /* TestFlight */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Three Pillar Global, Inc.";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hudson2Git/hudson2Git-Prefix.pch";
 				INFOPLIST_FILE = "hudson2Git/hudson2Git-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D49CD901-9773-449C-8C8C-6AE5AB3267A8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = TestFlight;

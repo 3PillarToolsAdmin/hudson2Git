@@ -53,6 +53,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	return [super initWithCoder:aDecoder];
 }
+
 /*!
  \if PrivateCond
  */

@@ -10,6 +10,12 @@
         <Path>modules.html</Path>
         <Subnodes>
          <Node>
+          <Name>Models</Name>
+          <Path>group___models.html</Path>
+          <Subnodes>
+          </Subnodes>
+         </Node>
+         <Node>
           <Name>view controller objects</Name>
           <Path>group___view_controllers.html</Path>
           <Subnodes>
@@ -28,12 +34,23 @@
              <Node>
               <Name>viewController</Name>
               <Path>interface_app_delegate.html</Path>
-              <Anchor>afdae0acffddf96a8e7930b1151734078</Anchor>
+              <Anchor>abf30cbee970814778a8a80e6dcbcc1ee</Anchor>
              </Node>
              <Node>
               <Name>window</Name>
               <Path>interface_app_delegate.html</Path>
-              <Anchor>acf48ac24125e688cac1a85445cd7fac2</Anchor>
+              <Anchor>ae04748cdefebda525b266731b6c120a2</Anchor>
+             </Node>
+            </Subnodes>
+           </Node>
+           <Node>
+            <Name>MyModel</Name>
+            <Path>interface_my_model.html</Path>
+            <Subnodes>
+             <Node>
+              <Name>trySomethingDangerous</Name>
+              <Path>interface_my_model.html</Path>
+              <Anchor>ad9510583a0f0778058c7b02ace22cc65</Anchor>
              </Node>
             </Subnodes>
            </Node>
@@ -42,29 +59,39 @@
             <Path>interface_view_controller.html</Path>
             <Subnodes>
              <Node>
+              <Name>buttonPressed:</Name>
+              <Path>interface_view_controller.html</Path>
+              <Anchor>a3909d631c2dc28e18f7fd2f5383a7ca5</Anchor>
+             </Node>
+             <Node>
               <Name>doSomething</Name>
               <Path>interface_view_controller.html</Path>
-              <Anchor>aa4cc442b40edfc06e08393c57a10e0c6</Anchor>
+              <Anchor>a086dad48b4c0171ae62ecd975b82e92d</Anchor>
              </Node>
              <Node>
               <Name>doSomethingWithString:</Name>
               <Path>interface_view_controller.html</Path>
-              <Anchor>a13db753ef8fe87f79c21cb29931747b1</Anchor>
+              <Anchor>a2f18dd25eff21025e713459cacbab4cb</Anchor>
              </Node>
              <Node>
               <Name>init</Name>
               <Path>interface_view_controller.html</Path>
-              <Anchor>acfd94df2a9c4c795715f8359ed98ee07</Anchor>
+              <Anchor>a4213bb26f5207ee3f402fe463badc691</Anchor>
              </Node>
              <Node>
               <Name>initWithCoder:</Name>
               <Path>interface_view_controller.html</Path>
-              <Anchor>a29a1f821c74d1272ce9a7d6bb8a76af2</Anchor>
+              <Anchor>a27ef5ded4f3bf3bd5a1928688a1beb7d</Anchor>
              </Node>
              <Node>
               <Name>creationDate</Name>
               <Path>interface_view_controller.html</Path>
-              <Anchor>a31f51dcba88e0291abf1a452567ff6bf</Anchor>
+              <Anchor>a7c77d796e0e044db79dbc671416eb05a</Anchor>
+             </Node>
+             <Node>
+              <Name>model</Name>
+              <Path>interface_view_controller.html</Path>
+              <Anchor>a7baffc364f38e2b33f98c33e4c723ce2</Anchor>
              </Node>
             </Subnodes>
            </Node>
@@ -103,15 +130,15 @@
           <Path>files.html</Path>
           <Subnodes>
            <Node>
-            <Name>/Users/eashak/Workspace/hudson2Git/hudson2Git/AppDelegate.h</Name>
+            <Name>AppDelegate.h</Name>
             <Path>_app_delegate_8h.html</Path>
            </Node>
            <Node>
-            <Name>/Users/eashak/Workspace/hudson2Git/hudson2Git/AppDelegate.m</Name>
+            <Name>AppDelegate.m</Name>
             <Path>_app_delegate_8m.html</Path>
            </Node>
            <Node>
-            <Name>/Users/eashak/Workspace/hudson2Git/hudson2Git/main.m</Name>
+            <Name>main.m</Name>
             <Path>main_8m.html</Path>
             <Subnodes>
              <Node>
@@ -122,11 +149,19 @@
             </Subnodes>
            </Node>
            <Node>
-            <Name>/Users/eashak/Workspace/hudson2Git/hudson2Git/ViewController.h</Name>
+            <Name>MyModel.h</Name>
+            <Path>_my_model_8h.html</Path>
+           </Node>
+           <Node>
+            <Name>MyModel.m</Name>
+            <Path>_my_model_8m.html</Path>
+           </Node>
+           <Node>
+            <Name>ViewController.h</Name>
             <Path>_view_controller_8h.html</Path>
            </Node>
            <Node>
-            <Name>/Users/eashak/Workspace/hudson2Git/hudson2Git/ViewController.m</Name>
+            <Name>ViewController.m</Name>
             <Path>_view_controller_8m.html</Path>
            </Node>
           </Subnodes>

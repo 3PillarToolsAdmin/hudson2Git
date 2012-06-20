@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB1DC28B159258B70006347F /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC28A159258B70006347F /* MyModel.m */; };
 		DB54353D157E848700C5268A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB54353C157E848700C5268A /* SenTestingKit.framework */; };
 		DB54353E157E848700C5268A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CD81562C8BD006B2B70 /* UIKit.framework */; };
 		DB54353F157E848700C5268A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CDA1562C8BD006B2B70 /* Foundation.framework */; };
@@ -21,11 +20,10 @@
 		DBB31CE91562C8BD006B2B70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB31CE81562C8BD006B2B70 /* AppDelegate.m */; };
 		DBB31CEC1562C8BD006B2B70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB31CEB1562C8BD006B2B70 /* ViewController.m */; };
 		DBB31CEF1562C8BD006B2B70 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBB31CED1562C8BD006B2B70 /* ViewController.xib */; };
+		DBFFF53C15925EB30020E6D5 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFFF53B15925EB30020E6D5 /* MyModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DB1DC289159258B70006347F /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyModel.h; path = ../../Documentation/Documentation/MyModel.h; sourceTree = "<group>"; };
-		DB1DC28A159258B70006347F /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyModel.m; path = ../../Documentation/Documentation/MyModel.m; sourceTree = "<group>"; };
 		DB54353B157E848700C5268A /* LogicUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB54353C157E848700C5268A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB543542157E848700C5268A /* LogicUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicUnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -46,6 +44,8 @@
 		DBB31CEA1562C8BD006B2B70 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DBB31CEB1562C8BD006B2B70 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DBB31CEE1562C8BD006B2B70 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		DBFFF53A15925EB30020E6D5 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		DBFFF53B15925EB30020E6D5 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +85,8 @@
 		DB1DC28E159258CC0006347F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DB1DC289159258B70006347F /* MyModel.h */,
-				DB1DC28A159258B70006347F /* MyModel.m */,
+				DBFFF53A15925EB30020E6D5 /* MyModel.h */,
+				DBFFF53B15925EB30020E6D5 /* MyModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -295,7 +295,7 @@
 				DBB31CE51562C8BD006B2B70 /* main.m in Sources */,
 				DBB31CE91562C8BD006B2B70 /* AppDelegate.m in Sources */,
 				DBB31CEC1562C8BD006B2B70 /* ViewController.m in Sources */,
-				DB1DC28B159258B70006347F /* MyModel.m in Sources */,
+				DBFFF53C15925EB30020E6D5 /* MyModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

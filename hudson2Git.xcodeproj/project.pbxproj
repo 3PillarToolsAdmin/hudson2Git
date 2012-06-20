@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB54353D157E848700C5268A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB54353C157E848700C5268A /* SenTestingKit.framework */; };
+		DB54353E157E848700C5268A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CD81562C8BD006B2B70 /* UIKit.framework */; };
+		DB54353F157E848700C5268A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CDA1562C8BD006B2B70 /* Foundation.framework */; };
+		DB543545157E848700C5268A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DB543543157E848700C5268A /* InfoPlist.strings */; };
+		DB543548157E848800C5268A /* LogicUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB543547157E848800C5268A /* LogicUnitTests.m */; };
 		DBB31CD91562C8BD006B2B70 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CD81562C8BD006B2B70 /* UIKit.framework */; };
 		DBB31CDB1562C8BD006B2B70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CDA1562C8BD006B2B70 /* Foundation.framework */; };
 		DBB31CDD1562C8BD006B2B70 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CDC1562C8BD006B2B70 /* CoreGraphics.framework */; };
@@ -18,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB54353B157E848700C5268A /* LogicUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB54353C157E848700C5268A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DB543542157E848700C5268A /* LogicUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicUnitTests-Info.plist"; sourceTree = "<group>"; };
+		DB543544157E848700C5268A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DB543546157E848700C5268A /* LogicUnitTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicUnitTests.h; sourceTree = "<group>"; };
+		DB543547157E848800C5268A /* LogicUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicUnitTests.m; sourceTree = "<group>"; };
+		DB543549157E848800C5268A /* LogicUnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicUnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		DBB31CD41562C8BD006B2B70 /* hudson2Git.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hudson2Git.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB31CD81562C8BD006B2B70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DBB31CDA1562C8BD006B2B70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,6 +46,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DB543537157E848700C5268A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB54353D157E848700C5268A /* SenTestingKit.framework in Frameworks */,
+				DB54353E157E848700C5268A /* UIKit.framework in Frameworks */,
+				DB54353F157E848700C5268A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBB31CD11562C8BD006B2B70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB543540157E848700C5268A /* LogicUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB543546157E848700C5268A /* LogicUnitTests.h */,
+				DB543547157E848800C5268A /* LogicUnitTests.m */,
+				DB543541157E848700C5268A /* Supporting Files */,
+			);
+			path = LogicUnitTests;
+			sourceTree = "<group>";
+		};
+		DB543541157E848700C5268A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB543542157E848700C5268A /* LogicUnitTests-Info.plist */,
+				DB543543157E848700C5268A /* InfoPlist.strings */,
+				DB543549157E848800C5268A /* LogicUnitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		DBB31CC91562C8BD006B2B70 = {
 			isa = PBXGroup;
 			children = (
 				DBB31CDE1562C8BD006B2B70 /* hudson2Git */,
+				DB543540157E848700C5268A /* LogicUnitTests */,
 				DBB31CD71562C8BD006B2B70 /* Frameworks */,
 				DBB31CD51562C8BD006B2B70 /* Products */,
 			);
@@ -60,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				DBB31CD41562C8BD006B2B70 /* hudson2Git.app */,
+				DB54353B157E848700C5268A /* LogicUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +114,7 @@
 				DBB31CD81562C8BD006B2B70 /* UIKit.framework */,
 				DBB31CDA1562C8BD006B2B70 /* Foundation.framework */,
 				DBB31CDC1562C8BD006B2B70 /* CoreGraphics.framework */,
+				DB54353C157E848700C5268A /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,6 +146,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB54353A157E848700C5268A /* LogicUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB54354A157E848800C5268A /* Build configuration list for PBXNativeTarget "LogicUnitTests" */;
+			buildPhases = (
+				DB543536157E848700C5268A /* Sources */,
+				DB543537157E848700C5268A /* Frameworks */,
+				DB543538157E848700C5268A /* Resources */,
+				DB543539157E848700C5268A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicUnitTests;
+			productName = LogicUnitTests;
+			productReference = DB54353B157E848700C5268A /* LogicUnitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		DBB31CD31562C8BD006B2B70 /* hudson2Git */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBB31CF21562C8BD006B2B70 /* Build configuration list for PBXNativeTarget "hudson2Git" */;
@@ -108,6 +171,7 @@
 				DBB31CD01562C8BD006B2B70 /* Sources */,
 				DBB31CD11562C8BD006B2B70 /* Frameworks */,
 				DBB31CD21562C8BD006B2B70 /* Resources */,
+				DB84F523157EA32100D5453F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -140,11 +204,20 @@
 			projectRoot = "";
 			targets = (
 				DBB31CD31562C8BD006B2B70 /* hudson2Git */,
+				DB54353A157E848700C5268A /* LogicUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB543538157E848700C5268A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB543545157E848700C5268A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBB31CD21562C8BD006B2B70 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -156,7 +229,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DB543539157E848700C5268A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export TEST_AFTER_BUILD=YES\n# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		DB84F523157EA32100D5453F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		DB543536157E848700C5268A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB543548157E848800C5268A /* LogicUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DBB31CD01562C8BD006B2B70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +280,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		DB543543157E848700C5268A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB543544157E848700C5268A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		DBB31CE11562C8BD006B2B70 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -189,6 +307,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DB54354B157E848800C5268A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicUnitTests/LogicUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "LogicUnitTests/LogicUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DB54354C157E848800C5268A /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicUnitTests/LogicUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "LogicUnitTests/LogicUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = TestFlight;
+		};
+		DB54354D157E848800C5268A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicUnitTests/LogicUnitTests-Prefix.pch";
+				INFOPLIST_FILE = "LogicUnitTests/LogicUnitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		DBB31CF01562C8BD006B2B70 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -241,6 +404,7 @@
 				GCC_PREFIX_HEADER = "hudson2Git/hudson2Git-Prefix.pch";
 				INFOPLIST_FILE = "hudson2Git/hudson2Git-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -252,6 +416,7 @@
 				GCC_PREFIX_HEADER = "hudson2Git/hudson2Git-Prefix.pch";
 				INFOPLIST_FILE = "hudson2Git/hudson2Git-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -292,6 +457,7 @@
 				INFOPLIST_FILE = "hudson2Git/hudson2Git-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "D49CD901-9773-449C-8C8C-6AE5AB3267A8";
+				TEST_AFTER_BUILD = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = TestFlight;
@@ -299,6 +465,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB54354A157E848800C5268A /* Build configuration list for PBXNativeTarget "LogicUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB54354B157E848800C5268A /* Debug */,
+				DB54354C157E848800C5268A /* TestFlight */,
+				DB54354D157E848800C5268A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DBB31CCE1562C8BD006B2B70 /* Build configuration list for PBXProject "hudson2Git" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

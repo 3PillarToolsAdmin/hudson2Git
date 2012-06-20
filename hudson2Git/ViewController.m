@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize creationDate;
 
 - (void)viewDidLoad
 {
@@ -31,4 +32,29 @@
 	return YES;
 }
 
+
+- (id)init {
+	return [super init];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+	return [super initWithCoder:aDecoder];
+}
+/*!
+ \if PrivateCond
+ */
+- (void)doSomethingPrivate {
+	//Doing something in private
+}
+/*!
+ \endif
+ */
+
+- (void)doSomething {
+	
+}
+
+- (void)doSomethingWithString:(NSString*)inputString {
+	
+}
 @end

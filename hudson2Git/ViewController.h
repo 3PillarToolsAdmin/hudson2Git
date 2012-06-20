@@ -8,6 +8,51 @@
 
 #import <UIKit/UIKit.h>
 
+/** \defgroup ViewControllers view controller objects
+ This is a group defenition, it can contain any other documentations and class documentations
+ */
+
+/**
+ \class ViewController
+ \brief Summary of the class
+ \ingroup ViewControllers
+ 
+ Define the class and the group to which the class belongs
+ 
+ */
 @interface ViewController : UIViewController
+
+/**
+ Date which the object created
+ */
+@property (nonatomic, retain) NSDate *creationDate;
+
+/**
+ @name Initialization
+ */
+//@{
+/**
+ Standard init function
+ */
+- (id)init;
+/*!
+ Init with Coder
+ add args here
+ */
+- (id)initWithCoder:(NSCoder *)aDecoder;
+//@}
+
+/**
+ a public method
+ */
+- (void)doSomething;
+
+/**
+ \name doSomethingWithString
+ \brief public function with an argument<BR>
+ \b Parameters
+ \li \c inputString String input variable
+ */
+- (void)doSomethingWithString:(NSString*)inputString;
 
 @end

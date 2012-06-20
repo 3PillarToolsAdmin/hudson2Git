@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyModel.h"
 
 /** \defgroup ViewControllers view controller objects
  This is a group defenition, it can contain any other documentations and class documentations
@@ -21,6 +22,8 @@
  
  */
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) MyModel *model;
 
 /**
  Date which the object created
@@ -55,4 +58,5 @@
  */
 - (void)doSomethingWithString:(NSString*)inputString;
 
+- (IBAction)buttonPressed:(id)sender;
 @end

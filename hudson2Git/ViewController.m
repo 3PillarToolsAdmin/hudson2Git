@@ -14,6 +14,7 @@
 
 @implementation ViewController
 @synthesize creationDate;
+@synthesize model;
 
 - (void)viewDidLoad
 {
@@ -23,6 +24,7 @@
 
 - (void)viewDidUnload
 {
+
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -34,9 +36,20 @@
 
 
 - (id)init {
-	return [super init];
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
 }
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        model = [[MyModel alloc] init];   
+    }
+    return self;
+}
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	return [super initWithCoder:aDecoder];
 }
@@ -56,5 +69,12 @@
 
 - (void)doSomethingWithString:(NSString*)inputString {
 	
+}
+
+- (IBAction)buttonPressed:(id)sender {
+    [self.model trySomethingDangerous];
+}
+- (void)dealloc {
+    [super dealloc];
 }
 @end

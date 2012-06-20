@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1DC28B159258B70006347F /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DC28A159258B70006347F /* MyModel.m */; };
 		DB54353D157E848700C5268A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB54353C157E848700C5268A /* SenTestingKit.framework */; };
 		DB54353E157E848700C5268A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CD81562C8BD006B2B70 /* UIKit.framework */; };
 		DB54353F157E848700C5268A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB31CDA1562C8BD006B2B70 /* Foundation.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB1DC289159258B70006347F /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyModel.h; path = ../../Documentation/Documentation/MyModel.h; sourceTree = "<group>"; };
+		DB1DC28A159258B70006347F /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyModel.m; path = ../../Documentation/Documentation/MyModel.m; sourceTree = "<group>"; };
 		DB54353B157E848700C5268A /* LogicUnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicUnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB54353C157E848700C5268A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DB543542157E848700C5268A /* LogicUnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicUnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -69,6 +72,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB1DC28D159258BD0006347F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBB31CEA1562C8BD006B2B70 /* ViewController.h */,
+				DBB31CEB1562C8BD006B2B70 /* ViewController.m */,
+				DBB31CED1562C8BD006B2B70 /* ViewController.xib */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DB1DC28E159258CC0006347F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DB1DC289159258B70006347F /* MyModel.h */,
+				DB1DC28A159258B70006347F /* MyModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		DB543540157E848700C5268A /* LogicUnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,9 +146,8 @@
 			children = (
 				DBB31CE71562C8BD006B2B70 /* AppDelegate.h */,
 				DBB31CE81562C8BD006B2B70 /* AppDelegate.m */,
-				DBB31CEA1562C8BD006B2B70 /* ViewController.h */,
-				DBB31CEB1562C8BD006B2B70 /* ViewController.m */,
-				DBB31CED1562C8BD006B2B70 /* ViewController.xib */,
+				DB1DC28D159258BD0006347F /* View Controllers */,
+				DB1DC28E159258CC0006347F /* Models */,
 				DBB31CDF1562C8BD006B2B70 /* Supporting Files */,
 			);
 			path = hudson2Git;
@@ -274,6 +295,7 @@
 				DBB31CE51562C8BD006B2B70 /* main.m in Sources */,
 				DBB31CE91562C8BD006B2B70 /* AppDelegate.m in Sources */,
 				DBB31CEC1562C8BD006B2B70 /* ViewController.m in Sources */,
+				DB1DC28B159258B70006347F /* MyModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
